@@ -18,14 +18,7 @@ for (let i = 0 ; i < imagesList.length ; i++){
 
     const imgEl = document.createElement("img");
     imgEl.src = currentImg;
-
-    if ( i = 0 ) {
-        imgEl.classList.add("my-active");
-        thumbSliderEl.append(imgEl);
-    } else {
-        thumbSliderEl.append(imgEl);
-    }
-
+    thumbSliderEl.append(imgEl);
 }
 
 
