@@ -6,13 +6,17 @@ const images = [
     "img/05.webp",
 ];
 let currentImgIndex = [0];
+const imgColumnEl = document.getElementById ("img-column");
 const sliderImgEl = document.querySelector (".slider-container .img-slider")
 const dotsContainerEl = document.querySelector(".dots-container");
 const btnNext = document.getElementById ("btn-next");
 const btnPrev = document.getElementById ("btn-prev");
 
 //**************************************************
+/*              CICLI                            */
 
+
+/*puntini*/
 for ( let i = 0 ; i < images.length ; i++) {
     if ( i == 0 ) {
         dotsContainerEl.innerHTML += (`<div class="dot active"></div>`);
@@ -20,6 +24,8 @@ for ( let i = 0 ; i < images.length ; i++) {
         dotsContainerEl.innerHTML += (`<div class="dot"></div>`);
     }
 }
+
+
 
 
 

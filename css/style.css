@@ -8,6 +8,30 @@
     object-fit: cover;
     object-position: right;
 }
+
+/**********IMMAGINI IN COLONNA**********/
+
+.my-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/*********BUTTONS**********/
+
+.my-t-btn{
+    opacity: .7;
+}
+
+
+
+/********PUNTINI SLIDE**********/
+
+
+
+
 .dots-container{
     height: 40px;
 }

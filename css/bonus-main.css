@@ -1,0 +1,60 @@
+/****************BUTTON****************/
+
+#button-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button-container button{
+    z-index: 100;
+    opacity: .5;
+    margin: -10px;
+}
+
+#button-container button:hover{
+    opacity: 1;
+}
+
+
+/*****************THUMB****************/
+
+#thumb-slider{
+    width: 230px;
+    position: relative;
+}
+
+#thumb-slider img{
+    width: 100%;
+    height: calc(100% / 5);
+    filter: opacity(.5);
+}
+
+#thumb-slider img.my-active{
+    filter: opacity(1);
+    border: 2px solid black;
+}
+
+/********************SLIDER************/
+
+#img-slider{
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+#img-slider img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+
