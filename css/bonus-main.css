@@ -25,14 +25,17 @@
 
 /*****************THUMB****************/
 
+.thumb-container{
+    position: relative;
+}
+
 #thumb-slider{
     width: 230px;
-    position: relative;
 }
 
 #thumb-slider img{
     width: 100%;
-    height: calc(100% / 5);
+    aspect-ratio: 16 / 10;
     filter: opacity(.5);
 }
 
@@ -55,6 +58,12 @@
     position: absolute;
     object-fit: cover;
     object-position: center;
+    filter: opacity(0);
+    transition: all .5s linear;
+}
+
+#img-slider img.my-active{
+    filter: opacity(1);
 }
 
 
